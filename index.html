@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="asset/icon.png" type="image/x-icon">
+    <title>Ganzo Motivate</title>
+</head>
+<body>
+    <!-- HEADER -->
+        <header class="bg-gray-100">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex-1 md:flex md:items-center md:gap-12">
+                <a class="block text-teal-600 py-8" href="#">
+                    <span class="sr-only">Home</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512" version="1.1"><path d="M 366.500 74.590 C 341.200 80.858, 298.225 91.432, 271 98.088 C 243.775 104.745, 214.993 111.835, 207.040 113.845 L 192.579 117.500 189.767 124.894 C 188.221 128.961, 187.121 132.454, 187.323 132.656 C 187.525 132.859, 189.673 132.157, 192.095 131.098 C 194.518 130.038, 216.750 123.917, 241.500 117.495 C 266.250 111.072, 312.272 99.136, 343.772 90.969 C 375.271 82.803, 401.934 75.838, 403.022 75.493 C 404.974 74.874, 405 75.495, 405 122.393 L 405 169.921 394.347 187.210 C 388.488 196.720, 380.818 209.157, 377.303 214.848 C 373.788 220.539, 371.306 225.039, 371.787 224.848 C 372.268 224.657, 382.410 213.700, 394.324 200.500 L 415.986 176.500 415.993 119.750 C 416 66.330, 415.897 63.006, 414.250 63.096 C 413.288 63.149, 391.800 68.321, 366.500 74.590 M 348.730 101.899 C 326.307 107.256, 307.579 112.058, 307.112 112.570 C 304.868 115.031, 279.871 156.204, 280.337 156.671 C 280.632 156.965, 297.824 153.082, 318.543 148.043 C 339.261 143.003, 356.388 139.055, 356.603 139.270 C 356.818 139.484, 321.678 197.449, 278.515 268.080 C 235.352 338.711, 200.368 396.613, 200.773 396.752 C 201.179 396.890, 244.708 385.865, 297.505 372.252 L 393.500 347.500 393.761 304.250 C 393.904 280.462, 393.679 261.012, 393.261 261.026 C 392.842 261.040, 383.725 272.913, 373 287.409 L 353.500 313.767 318.095 323.395 C 298.622 328.690, 282.493 332.827, 282.254 332.587 C 282.014 332.347, 285.965 325.705, 291.034 317.826 C 296.103 309.947, 320.975 271.372, 346.306 232.104 C 383.815 173.957, 392.502 159.853, 393.121 156.104 C 393.539 153.572, 393.908 138.113, 393.940 121.750 L 394 92 391.750 92.079 C 390.512 92.122, 371.154 96.541, 348.730 101.899 M 202 140.041 C 156.625 151.535, 119.388 160.953, 119.250 160.970 C 119.112 160.986, 119.020 186.087, 119.045 216.750 L 119.090 272.500 123.511 267.566 C 126.113 264.662, 133.190 259.286, 140.716 254.496 L 153.500 246.360 153.766 219.223 L 154.032 192.085 157.766 191.043 C 159.820 190.469, 183.837 184.076, 211.139 176.835 L 260.778 163.670 270.372 146.501 C 275.649 137.057, 281.549 127.259, 283.483 124.726 C 287.330 119.687, 287.620 118.965, 285.750 119.071 C 285.063 119.110, 247.375 128.547, 202 140.041 M 133.254 132.830 L 96.007 142.500 96.004 187.087 C 96.002 211.610, 95.702 245.922, 95.338 263.337 C 94.906 284.034, 95.020 295, 95.668 295 C 96.213 295, 99.367 292.550, 102.676 289.556 L 108.692 284.111 108.210 217.806 L 107.729 151.500 137.614 144.596 C 154.051 140.798, 168.034 137.498, 168.686 137.263 C 169.715 136.892, 174 126.040, 174 123.806 C 174 122.365, 171 123.030, 133.254 132.830 M 254 199.515 C 227.875 206.301, 200.088 213.523, 192.250 215.564 L 178 219.275 178 240.205 C 178 259.675, 178.122 261.097, 179.750 260.600 C 189.084 257.744, 218.334 250.001, 218.637 250.304 C 218.853 250.520, 217.914 252.691, 216.551 255.130 C 212.034 263.211, 210.630 271.753, 210.738 290.500 C 210.791 299.850, 211.221 309.522, 211.694 311.993 L 212.553 316.485 217.145 309.993 C 238.995 279.099, 301.192 189.662, 301.643 188.489 C 301.957 187.670, 302.053 187.040, 301.857 187.089 C 301.661 187.138, 280.125 192.730, 254 199.515 M 407.002 208.250 C 402.367 213.887, 394.476 223.450, 389.466 229.500 C 378.995 242.144, 329.235 302.794, 327.594 304.914 C 326.414 306.438, 329.264 306.209, 339.923 303.923 L 344.799 302.877 374.650 264.977 L 404.500 227.076 404.757 291.697 C 404.899 327.239, 404.843 356.490, 404.634 356.700 C 404.424 356.909, 381.358 362.934, 353.376 370.088 C 325.394 377.241, 286.750 387.122, 267.500 392.046 C 248.250 396.969, 204.600 408.121, 170.500 416.827 L 108.500 432.657 108 400.078 C 107.725 382.160, 107.144 367.596, 106.710 367.713 C 106.275 367.831, 103.688 370.369, 100.960 373.354 L 96 378.780 96 413.890 C 96 433.201, 96.341 449, 96.757 449 C 97.495 449, 125.269 441.779, 264 405.520 C 387.164 373.329, 396.431 370.902, 406.250 368.278 L 416 365.672 416 281.836 C 416 235.726, 415.871 198, 415.714 198 C 415.556 198, 411.636 202.613, 407.002 208.250 M 135.267 301.333 L 119.035 307.500 119.017 321.750 C 119.008 329.587, 119.257 336, 119.571 336 C 119.885 336, 123.279 333.188, 127.113 329.750 C 130.947 326.313, 134.470 323.365, 134.942 323.200 C 135.414 323.035, 135.958 325.221, 136.150 328.059 L 136.500 333.217 127.750 343.859 L 119.001 354.500 119 386.148 L 119 417.796 126.750 415.814 C 154.802 408.643, 183.371 400.964, 183.889 400.457 C 186.358 398.039, 213.406 352.438, 212.505 352.211 C 211.875 352.052, 198.985 355.090, 183.862 358.961 C 168.739 362.833, 156.058 366, 155.683 366 C 155.307 366, 155 360.223, 155 353.162 C 155 326.263, 153.703 294.998, 152.590 295.083 C 151.991 295.129, 144.195 297.941, 135.267 301.333 M 100.943 315.710 L 95.386 321.500 95.943 342 L 96.500 362.500 102.250 355.303 L 108 348.107 107.926 333.303 C 107.885 325.162, 107.548 316.570, 107.176 314.210 L 106.500 309.921 100.943 315.710" stroke="none" fill="#060504" fill-rule="evenodd"/><path d="M 0.464 1.246 C 0.202 1.936, 0.103 117.025, 0.244 257 L 0.500 511.500 255.395 511.752 C 442.984 511.937, 510.648 511.707, 511.645 510.879 C 512.778 509.939, 513 468.076, 513 254.885 L 513 0.015 256.970 0.004 C 52.645 -0.005, 0.844 0.246, 0.464 1.246 M 0.492 256 C 0.492 396.525, 0.608 454.012, 0.750 383.750 C 0.892 313.487, 0.892 198.512, 0.750 128.250 C 0.608 57.987, 0.492 115.475, 0.492 256 M 366.500 74.590 C 341.200 80.858, 298.225 91.432, 271 98.088 C 243.775 104.745, 214.993 111.835, 207.040 113.845 L 192.579 117.500 189.767 124.894 C 188.221 128.961, 187.121 132.454, 187.323 132.656 C 187.525 132.859, 189.673 132.157, 192.095 131.098 C 194.518 130.038, 216.750 123.917, 241.500 117.495 C 266.250 111.072, 312.272 99.136, 343.772 90.969 C 375.271 82.803, 401.934 75.838, 403.022 75.493 C 404.974 74.874, 405 75.495, 405 122.393 L 405 169.921 394.347 187.210 C 388.488 196.720, 380.818 209.157, 377.303 214.848 C 373.788 220.539, 371.306 225.039, 371.787 224.848 C 372.268 224.657, 382.410 213.700, 394.324 200.500 L 415.986 176.500 415.993 119.750 C 416 66.330, 415.897 63.006, 414.250 63.096 C 413.288 63.149, 391.800 68.321, 366.500 74.590 M 348.730 101.899 C 326.307 107.256, 307.579 112.058, 307.112 112.570 C 304.868 115.031, 279.871 156.204, 280.337 156.671 C 280.632 156.965, 297.824 153.082, 318.543 148.043 C 339.261 143.003, 356.388 139.055, 356.603 139.270 C 356.818 139.484, 321.678 197.449, 278.515 268.080 C 235.352 338.711, 200.368 396.613, 200.773 396.752 C 201.179 396.890, 244.708 385.865, 297.505 372.252 L 393.500 347.500 393.761 304.250 C 393.904 280.462, 393.679 261.012, 393.261 261.026 C 392.842 261.040, 383.725 272.913, 373 287.409 L 353.500 313.767 318.095 323.395 C 298.622 328.690, 282.493 332.827, 282.254 332.587 C 282.014 332.347, 285.965 325.705, 291.034 317.826 C 296.103 309.947, 320.975 271.372, 346.306 232.104 C 383.815 173.957, 392.502 159.853, 393.121 156.104 C 393.539 153.572, 393.908 138.113, 393.940 121.750 L 394 92 391.750 92.079 C 390.512 92.122, 371.154 96.541, 348.730 101.899 M 202 140.041 C 156.625 151.535, 119.388 160.953, 119.250 160.970 C 119.112 160.986, 119.020 186.087, 119.045 216.750 L 119.090 272.500 123.511 267.566 C 126.113 264.662, 133.190 259.286, 140.716 254.496 L 153.500 246.360 153.766 219.223 L 154.032 192.085 157.766 191.043 C 159.820 190.469, 183.837 184.076, 211.139 176.835 L 260.778 163.670 270.372 146.501 C 275.649 137.057, 281.549 127.259, 283.483 124.726 C 287.330 119.687, 287.620 118.965, 285.750 119.071 C 285.063 119.110, 247.375 128.547, 202 140.041 M 133.254 132.830 L 96.007 142.500 96.004 187.087 C 96.002 211.610, 95.702 245.922, 95.338 263.337 C 94.906 284.034, 95.020 295, 95.668 295 C 96.213 295, 99.367 292.550, 102.676 289.556 L 108.692 284.111 108.210 217.806 L 107.729 151.500 137.614 144.596 C 154.051 140.798, 168.034 137.498, 168.686 137.263 C 169.715 136.892, 174 126.040, 174 123.806 C 174 122.365, 171 123.030, 133.254 132.830 M 254 199.515 C 227.875 206.301, 200.088 213.523, 192.250 215.564 L 178 219.275 178 240.205 C 178 259.675, 178.122 261.097, 179.750 260.600 C 189.084 257.744, 218.334 250.001, 218.637 250.304 C 218.853 250.520, 217.914 252.691, 216.551 255.130 C 212.034 263.211, 210.630 271.753, 210.738 290.500 C 210.791 299.850, 211.221 309.522, 211.694 311.993 L 212.553 316.485 217.145 309.993 C 238.995 279.099, 301.192 189.662, 301.643 188.489 C 301.957 187.670, 302.053 187.040, 301.857 187.089 C 301.661 187.138, 280.125 192.730, 254 199.515 M 407.002 208.250 C 402.367 213.887, 394.476 223.450, 389.466 229.500 C 378.995 242.144, 329.235 302.794, 327.594 304.914 C 326.414 306.438, 329.264 306.209, 339.923 303.923 L 344.799 302.877 374.650 264.977 L 404.500 227.076 404.757 291.697 C 404.899 327.239, 404.843 356.490, 404.634 356.700 C 404.424 356.909, 381.358 362.934, 353.376 370.088 C 325.394 377.241, 286.750 387.122, 267.500 392.046 C 248.250 396.969, 204.600 408.121, 170.500 416.827 L 108.500 432.657 108 400.078 C 107.725 382.160, 107.144 367.596, 106.710 367.713 C 106.275 367.831, 103.688 370.369, 100.960 373.354 L 96 378.780 96 413.890 C 96 433.201, 96.341 449, 96.757 449 C 97.495 449, 125.269 441.779, 264 405.520 C 387.164 373.329, 396.431 370.902, 406.250 368.278 L 416 365.672 416 281.836 C 416 235.726, 415.871 198, 415.714 198 C 415.556 198, 411.636 202.613, 407.002 208.250 M 135.267 301.333 L 119.035 307.500 119.017 321.750 C 119.008 329.587, 119.257 336, 119.571 336 C 119.885 336, 123.279 333.188, 127.113 329.750 C 130.947 326.313, 134.470 323.365, 134.942 323.200 C 135.414 323.035, 135.958 325.221, 136.150 328.059 L 136.500 333.217 127.750 343.859 L 119.001 354.500 119 386.148 L 119 417.796 126.750 415.814 C 154.802 408.643, 183.371 400.964, 183.889 400.457 C 186.358 398.039, 213.406 352.438, 212.505 352.211 C 211.875 352.052, 198.985 355.090, 183.862 358.961 C 168.739 362.833, 156.058 366, 155.683 366 C 155.307 366, 155 360.223, 155 353.162 C 155 326.263, 153.703 294.998, 152.590 295.083 C 151.991 295.129, 144.195 297.941, 135.267 301.333 M 100.943 315.710 L 95.386 321.500 95.943 342 L 96.500 362.500 102.250 355.303 L 108 348.107 107.926 333.303 C 107.885 325.162, 107.548 316.570, 107.176 314.210 L 106.500 309.921 100.943 315.710" stroke="none" fill="#f2c21b" fill-rule="evenodd"/></svg>
+                </a>
+                </div>
+        
+                <div class="md:flex md:items-center md:gap-12">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-6 text-sm">
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://ganzostudio.xyz"> About </a>
+                    </li>
+        
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://saweria.co/WahyuGanzo"> Saweria </a>
+                    </li>
+        
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://trakteer.id/wahyu-ganzo/tip"> Trakteer </a>
+                    </li>
+        
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://sociabuzz.com/wahyuganzo/tribe"> Sociabuzz </a>
+                    </li>
+                    </ul>
+                </nav>
+        
+                
+        
+                    <div class="block md:hidden">
+                    <button
+                        class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                    >
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START MOTIVATE -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto py-4 sm:py-6 lg:py-8">
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Raka Wijaya</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Kesuksesan bukanlah tujuan, melainkan perjalanan. Jangan pernah berhenti melangkah, meski langkahmu kecil."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Dewi Kartika</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Kegagalan bukan akhir dari segalanya, melainkan titik awal untuk mencoba lagi dengan cara yang lebih baik."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Indra Pratama</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Keberhasilan dimulai dari mimpi yang besar dan keyakinan yang kuat untuk mewujudkannya."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+        
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Tasya Nuraini</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Jangan pernah meremehkan langkah-langkah kecil, karena setiap pencapaian besar dimulai dari satu langkah pertama."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Agung Saputra</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Ketika kamu percaya pada dirimu sendiri, dunia pun akan percaya padamu."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                        <img
+                        src="asset/user.png"
+                        alt=""
+                        class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                        />
+                    
+                        <div class="text-center sm:text-left">
+                        <h3 class="text-base sm:text-lg font-medium text-gray-900">Budi Santoso</h3>
+                    
+                        <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                            "Setiap rintangan adalah kesempatan untuk belajar, tumbuh, dan menjadi lebih kuat."
+                        </p>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                    <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                    />
+                
+                    <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rini Handayani</h3>
+                
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Semangat dan ketekunan adalah bahan bakar untuk mencapai impianmu."
+                    </p>
+                    </div>
+                </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                    <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                    />
+                
+                    <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Arif Rahman</h3>
+                
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Sukses tidak diukur dari seberapa cepat kamu mencapainya, tapi dari seberapa gigih kamu bertahan dalam prosesnya."
+                    </p>
+                    </div>
+                </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                    <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                    />
+                
+                    <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Siti Fauziah</h3>
+                
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jangan biarkan masa lalu menentukan masa depanmu. Kamu selalu punya kesempatan untuk mengubah jalan hidupmu."
+                    </p>
+                    </div>
+                </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Fitri Damayanti</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Hidup adalah tentang pilihan, dan pilihan terbaik adalah tetap berjuang meski dunia meragukanmu."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rizal Firdaus</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Tidak ada mimpi yang terlalu besar, yang ada hanya usaha yang belum cukup besar."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Farhan Hakim</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jika hari ini sulit, percayalah bahwa esok akan lebih baik selama kamu tidak menyerah."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Nadia Permata</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Setiap tantangan yang datang adalah kesempatan untuk menunjukkan seberapa kuat dirimu."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Adit Setiawan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Langkah kecil yang konsisten lebih berharga daripada langkah besar yang hanya dilakukan sekali."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Ika Puspita</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Sukses adalah tentang bertahan lebih lama dari kegagalan. Jangan berhenti sebelum impianmu tercapai."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rendi Wijaya</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Keberhasilan bukan tentang seberapa cepat kamu mencapai tujuan, tapi seberapa kuat kamu bertahan di tengah rintangan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Dimas Prasetyo</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Setiap orang punya waktunya masing-masing, jangan membandingkan langkahmu dengan orang lain."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Teguh Santoso</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jangan biarkan kegagalan menghentikanmu, biarkan itu membentukmu menjadi lebih tangguh."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Sri Yuliani</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Ketika kamu merasa ingin berhenti, ingatlah alasanmu memulainya."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Nanda Pratama</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Keberhasilan terbesar lahir dari ketekunan dalam menghadapi tantangan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Dewi Ambarwati</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Setiap hari adalah kesempatan untuk menjadi lebih baik daripada kemarin."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Bagus Wiryawan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Langkah kecil yang konsisten lebih berarti daripada lompatan besar tanpa arah."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Ayu Lestari</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jangan takut mencoba sesuatu yang baru. Kegagalan hanya akan mendekatkanmu pada kesuksesan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Reza Maulana</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Kesuksesan bukanlah tentang siapa yang tercepat, melainkan siapa yang paling gigih dalam prosesnya."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Bima Prakoso</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jangan takut gagal, karena dari kegagalan itulah kita belajar untuk sukses."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Tasya Wulandari</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Hidup bukan soal menunggu badai berlalu, tapi tentang belajar menari di tengah hujan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Andi Setiawan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Setiap langkah kecil yang kita ambil hari ini, akan menentukan seberapa jauh kita melangkah esok."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Siti Nurhaliza</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Kesabaran adalah kunci untuk membuka pintu kesempatan yang lebih besar."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img src="asset/user.png" alt="" class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0" />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rian Hidayat</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jika ingin meraih mimpi, jangan pernah menyerah meski rintangan datang bertubi-tubi."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Dika Ramadhan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Kunci kesuksesan adalah bertahan sedikit lebih lama dari kegagalan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Ayu Kartika</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Hidup ini adalah tentang keberanian untuk mengambil langkah pertama, bukan tentang seberapa cepat kamu sampai."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rian Nugraha</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Tantangan terbesar dalam hidup bukanlah mencapai kesuksesan, melainkan bagaimana mempertahankannya dengan kerendahan hati."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Sari Wulandari</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Kamu tidak harus melihat seluruh tangga, cukup ambil satu langkah pertama."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Adi Santoso</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Keberhasilan bukanlah kebetulan, tapi hasil dari kerja keras, ketekunan, dan pembelajaran terus menerus."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Indra Wijaya</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Jangan pernah berhenti berlari, meski jalan terlihat panjang. Setiap langkah kecil tetap berarti."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Aisyah Nurani</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Kesuksesan bukanlah tujuan akhir, tapi perjalanan yang penuh makna di setiap tantangan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Fahmi Ramadhan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Tidak ada yang mudah, tetapi semua layak untuk diperjuangkan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Rina Setiawan</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Mimpi besar dimulai dari langkah kecil yang penuh keyakinan."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[8rem] sm:h-auto rounded-lg bg-gray-200 flex items-center justify-center p-4 md:p-6 mb-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full max-w-md">
+                <img
+                    src="asset/user.png"
+                    alt=""
+                    class="aspect-square w-16 sm:w-20 rounded-lg object-cover flex-shrink-0"
+                />
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-lg font-medium text-gray-900">Budi Prasetyo</h3>
+                    <p class="mt-0.5 text-sm sm:text-base text-gray-700">
+                        "Berani gagal adalah langkah pertama menuju kesuksesan sejati."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- END MOTIVATE -->
+
+        <!-- START FOOTER -->
+            <footer class="bg-gray-100">
+                <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <nav class="-mx-5 -my-2 flex justify-center" aria-label="Footer">
+                    <ul class="flex flex-1 items-center justify-center md:flex-none md:justify-normal gap-4">
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://ganzostudio.xyz"> About </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://saweria.co/WahyuGanzo"> Saweria </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://trakteer.id/wahyu-ganzo/tip"> Trakteer </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="https://sociabuzz.com/wahyuganzo/tribe"> Sociabuzz </a>
+                    </li>
+                    </ul>
+                </nav>
+                <p class="mt-6 text-center text-sm text-gray-500">
+                    © 2025 Ganzo Studio. All rights reserved.
+                </p>
+                </div>
+            </footer>
+        <!-- END FOOTER -->
+    </div>
+
+</body>
+</html>
